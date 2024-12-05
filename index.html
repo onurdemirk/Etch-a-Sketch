@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js" defer></script>    
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <img id="img" src="img/logo.png" alt="Logo" />
+    </div>
+    <div class="menu">
+      <div class="firstMenu">
+        <div>
+          <label for="gridSize">New grid size:</label>
+          <input
+            type="text"
+            id="gridSize"
+            name="gridSize"
+            size="2"
+            maxlength="2"
+          />
+          <button id="gridSizeSubmit" type="button">Submit</button>
+        </div>
+        <div><span id="alertMessage"></span></div>
+      </div>
+      <div class="secondMenu">
+        <div class="radioButtons">
+          <input type="radio" id="black" name="button" value="black" checked />
+          <label for="black">Black</label><br />
+          <input type="radio" id="red" name="button" value="red" />
+          <label for="red">Red</label><br />
+          <input type="radio" id="blue" name="button" value="blue" />
+          <label for="blue">Blue</label><br />
+          <input
+            type="radio"
+            id="eraser"
+            name="button"
+            value="rgb(202, 201, 201)"
+          />
+          <label for="eraser">Eraser</label><br />
+        </div>
+        <div>
+          <button id="clear" type="button">Clear</button>
+        </div>
+      </div>
+    </div>
     <div class="container"></div>
-</body>
+  </body>
 </html>
